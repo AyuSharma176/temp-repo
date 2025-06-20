@@ -48,6 +48,6 @@ app.delete("/teas/:id", (req, res) => {
   material.splice(index, 1);
   return res.status(201).send("index deleted succesfully");
 });
-// app.listen(port, () => {
-//   console.log(`Server is listening now! on port: ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Server is listening now! on port: ${port}`);
+});
